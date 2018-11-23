@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>semantic-ui</title>
+          <link rel="stylesheet" type="text/css" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    </head>
+    <body>
+       <div class="ui container">
+            Let's write our first compute grid application   which will count the number of 
+            non-white-space characters in a sentence. As an example, we will take a sentence, 
+            split it into multiple words, and have every compute job 
+            count number of characters in each word. In the end,
+            we simply add up results received from individual jobs 
+            to get our total count.
+           <div class="ui basic modal">
+               <i class="close icon"></i>
+               <div class="header">
+                   Hi there!
+               </div>
+               <div class="image content">
+                    <p>
+                       Let's write our first compute grid application   which will count the number of 
+                       non-white-space characters in a sentence. As an example, we will take a sentence, 
+                       split it into multiple words, and have every compute job 
+                       count number of characters in each word. In the end,
+                       we simply add up results received from individual jobs 
+                       to get our total count.
+                    </p>
+               </div>
+               <div class="actions">
+                   <div class="ui basic button">Nuetral</div>
+                   <div class="ui basic green approve button">Approve</div>
+                   <div class="ui basic red cancel button">Cancel</div>
+               </div>
+           </div>
+       </div>
+       <script>
+           $('.ui.modal').modal('show dimmer');
+       </script>
+    </body>
+</html>

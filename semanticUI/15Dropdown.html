@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>semantic-ui</title>
+          <link rel="stylesheet" type="text/css" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    </head>
+    <body>
+       <div class="ui container">
+        <!-- <select name="gender" id="gender-select" class="ui selection dropdown"> -->
+       <!-- <select name="gender" id="gender-select" class="ui search selection dropdown"> -->
+        <select name="gender" id="gender-select" class="ui fluid multiple selection dropdown">
+            <option value="">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <script>
+        $('#gender-select').dropdown();
+    </script>
+    </body>
+</html>

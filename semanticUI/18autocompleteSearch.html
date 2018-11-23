@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>semantic-ui</title>
+          <link rel="stylesheet" type="text/css" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    </head>
+    <body>
+       <div class="ui container">
+           <div class="ui search">
+               <input class="prompt" type="text" placeholder="search">
+                <div class="results"></div>
+            </div>
+       </div>
+       <script>
+           var content=[
+            {
+                title:"semantic UI",
+                description:"best ui frame work",
+                url:"http://semantic-ui.com"
+            },
+            {
+                title:" Bootstrap",
+                description:"most advanced frame work",
+                url:"http://bootstrap.com"
+            },
+            {
+                title:"zurb found",
+                description:"best ui frame work",
+                url:"http://foundation.zurb.com"
+            },
+            {
+                title:"skeletonCSS",
+                description:"css preprocessor",
+                url:"http://skeleton.com"
+            }
+           ];
+           $('.ui.search').search({
+             //  source:content,
+               //searchFullText:false
+               apiSettings:{
+                   url:"http://api.github.com/search/repositories?q={query}"
+               },
+               fields:{
+                   results:'items',
+                   title:'name',
+                   url:"html_url"
+               }
+           });
+       </script>
+    </body>
+</html>

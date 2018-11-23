@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <title>semantic-ui</title>
+          <link rel="stylesheet" type="text/css" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <style>
+                .custom{
+                    height:500px;
+                }
+         </style>
+    </head>
+    <body>
+            <div class="ui container">
+                <div class="ui segment custom">
+                     <div class="ui dimmer">
+                         <div class="content" >
+                             <div class="center">
+                                 <div class="ui inverted icon header">
+                                     <i class="warning icon"></i>
+                                      Warning
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+                <button class="ui massive button" id="toggle1">Show</button>
+                <button class="ui massive button" id="toggle2">Hide</button>
+            </div>
+            <script>
+                $('#toggle1').click(function(){ $('.ui.dimmer').dimmer("show")})
+                $('#toggle2').click(function(){ $('.ui.dimmer').dimmer("hide")})
+            
+            </script>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>semantic-ui</title>
+          <link rel="stylesheet" type="text/css" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <style>
+        .pusher{
+            padding-top: 100px;
+        }
+    </style>
+    </head>
+    <body>
+       <div class="ui sidebar vertical left inverted menu">
+            <a href="#" class="item" >Monday</a>
+            <a href="#" class="item" >Tuesday</a>
+            <a href="#" class="item" >Wednesday</a>
+            <a href="#" class="item" >Thursday</a>
+            <a href="#" class="item" >Friday</a>
+            <a href="#" class="item" >Saturday</a>
+            <a href="#" class="item" >Sunday</a>
+        </div>
+        <div class="ui basic icon top fixed menu">
+            <a id="toggle" class="item">
+                <i class="sidebar icon"></i>
+                Menu
+            </a>
+        </div>
+    <div class="pusher">  
+      <div class="ui container">
+       Let's write our first compute grid application which
+       will count the number of non-white-space characters 
+       in a sentence. As an example, we will take a sentence,
+       split it into multiple words, and have every compute
+       job count number of characters in each word. In the
+       end, we simply add up results 
+        received from individual jobs to get our total count.
+      </div>    
+    </div>
+       <script>
+        $('#toggle').click(function(){
+             $('.ui.sidebar').sidebar('toggle');
+        });   
+       </script>
+    </body>
+</html>
